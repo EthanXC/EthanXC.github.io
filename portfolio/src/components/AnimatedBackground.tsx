@@ -8,8 +8,8 @@ const Galaxy: React.FC = () => {
   const texture = useLoader(TextureLoader, 'https://threejs.org/examples/textures/sprites/disc.png');
 
   const particlesCount = 20000;
-  const positions = [];
-  const colors = [];
+  const positions: number[] = [];
+  const colors: number[] = [];
 
   for (let i = 0; i < particlesCount; i++) {
     const radius = Math.random() * 5;
